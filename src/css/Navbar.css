@@ -1,0 +1,211 @@
+
+  .container-header{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    align-items: center;
+    background-color: #ffffff;
+    justify-items: center;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .header{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+  }
+  .menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+   
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    width: auto;
+  }
+  .nav-menu ul.nav-menu-items li{
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav-menu ul.nav-menu-items{
+    display: flex;
+  }
+  .nav-text a {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-size: 18px;
+    display: flex;
+    padding: 0 12px;
+    height: 100%;
+  }
+  .nav-text a span{
+    display: flex;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .nav-text a{
+    border-radius: 5px; 
+    margin: 0 5px;
+    height: 45px;
+  }
+  .navbar{
+    display: none;
+  }
+  .nav-text a:hover{
+    background-color: #d612516b;
+    
+  }
+  .nav-text .active{
+    border-radius: 5px; 
+    background-color: #d612516b;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  ul{
+    margin-top: 15px !important;
+  }
+  .nav-text a svg{
+    display: none;
+  }
+  
+  .header .rightbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+  }
+  .header .rightbar div{
+   margin: 0 10px;
+   padding: 5px 8px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+  }
+  
+  .sign-in{
+    background-color: #f30808c0;
+    color: white;
+    box-shadow: rgba(247, 94, 94, 0.945) 0px 1px 4px;
+  }
+  .sign-in:hover{
+    box-shadow: rgba(160, 53, 49, 0.808) 0px 6px 12px -2px, rgba(238, 99, 99, 0.712) 0px 3px 7px -3px;
+  }
+  .sign-up{
+    background-color: #0bc251e3;
+    color: white;
+    box-shadow: rgba(25, 223, 131, 0.945) 0px 1px 4px;
+  }
+  .sign-up:hover{
+    box-shadow: rgba(44, 196, 112, 0.808) 0px 6px 12px -2px, rgba(23, 197, 139, 0.788) 0px 3px 7px -3px;
+  }
+  .navbar-toggle{
+    display: none !important;
+  }
+  @media only screen and (max-width: 930px) {  
+    .logo{
+      display: none;
+    }
+    .menu-bars{
+      display: block;
+    }
+    .nav-text a svg{
+      display: block;
+    }
+    .nav-menu {
+      background-color: #ffffff;
+      width: 250px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      margin-left:0 !important;
+      transition: 850ms;     
+    }
+    .nav-menu.active {
+      left: 0;
+      transition: 350ms;
+    }
+    .nav-text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 8px 16px 8px 16px;
+      list-style: none;
+      height: 60px;
+      margin: 0 !important;
+    }
+    
+    .nav-text a {
+      text-decoration: none;
+      color: #0c0c0c;
+      font-size: 18px; 
+      width: 95%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      border-radius: 4px;
+    }
+    
+    .nav-text a:hover {
+      background-color: #d612516b;
+    }
+    
+    .nav-menu-items {
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      padding: 0 10px !important;
+      display: flex;
+      margin: 0 !important;
+      flex-direction: column;
+    }
+  
+    .navbar-toggle {
+      background-color: #ffffff;
+      width: 100%;
+      height: 80px;
+      display: flex !important;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 24px;
+    }
+    .navbar-toggle .menu-bars svg:hover{
+      color: #d612516b !important;
+    }
+    .navbar-toggle .menu-bars svg{
+     color: #000000 !important;
+    
+    }
+    span {
+      margin-left: 16px;
+    }
+    .navbar{
+      display: flex !important;
+      justify-content: flex-start;
+    }
+    .nav-text svg {
+      color: #0c0c0c !important;
+    }
+    .navbar .menu-bars svg {
+      display: flex;
+      justify-content: flex-start;
+      color: black !important;
+    }
+    .navbar .menu-bars  :hover{
+      color: #d612516b !important;
+    }
+}  
