@@ -9,9 +9,9 @@ import {NavLink} from 'react-router-dom'
           <Container>
             <div>logo</div>
             <Nav className="me-auto">
-              <NavLink  to="/home" >Trang chủ</NavLink>
-              <NavLink  to="/blogs">Blog </NavLink>
-              <NavLink  to="/truyen">Truyện</NavLink>
+              <NavLink activeClassName="active" to="/" exact={true} >Trang chủ</NavLink>
+              <NavLink activeClassName="active" to="/blogs">Blog </NavLink>
+              <NavLink activeClassName="active" to="/truyen">Truyện</NavLink>
             </Nav>
           </Container>
       </Navbar>
