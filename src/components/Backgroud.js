@@ -1,4 +1,4 @@
-import '../css/Home.css';
+import '../css/Backgroud.css';
 import React from 'react';
 
 const Bubble = () => {
@@ -15,7 +15,7 @@ const Bubble = () => {
   )
 }
 
-function Home() {
+function Backgroud() {
   return (
     <div className="home-container">
       <Bubble />
@@ -23,4 +23,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Backgroud;

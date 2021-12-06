@@ -1,4 +1,10 @@
 
+  .layout{
+    width: 70% !important;
+    margin-top: 80px !important;
+    margin: 0 auto;
+    background-color: #ffffff !important;
+  }
   .container-header{
     width: 100%;
     display: flex;
@@ -20,6 +26,52 @@
     justify-items: center;
     justify-content: space-between;
   }
+  /*modal*/
+  .ant-modal-title{
+    display: flex;
+    justify-content: center;
+    font-size: 24px !important;
+  }
+  .ant-modal-footer{
+    display: flex;
+    justify-content: center;
+  }
+  .ant-form-item-label{
+    text-align: left !important;
+  }
+  .ant-form{
+    width: 100%;
+    margin: 0 auto !important;
+  }
+  .ant-form-item{
+    justify-content: center;
+  }
+  .ant-input-affix-wrapper{
+    padding: 7px 11px !important;
+    height: 40px ;
+    border-radius: 5px !important;
+  }
+  a.login-form-forgot{
+    float: right;
+  }
+  .ant-input-prefix{
+    font-size: 16px;
+    opacity: 0.6;
+  }
+  .ant-form-item .btnlogin{
+    width: 100%;
+    height: 40px;
+  }
+  .form-item-button{
+    margin-bottom: 15px !important;
+  }
+  
+  .otherlogin{
+    display: flex;
+    justify-content: center;
+    color: #f50057;
+  }
+
   .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;
@@ -46,12 +98,12 @@
     color: #0c0c0c;
     font-size: 18px;
     display: flex;
-    padding: 0 12px;
+    padding: 3px 12px;
     height: 100%;
   }
   .nav-text a span{
     display: flex;
-    padding: 5px 5px;
+    padding: 3px 5px;
     font-size: 20px;
     font-weight: 500;
   }
@@ -64,14 +116,14 @@
     display: none;
   }
   .nav-text a:hover{
-    background-color: #d612516b;
-    
+    border: 1px solid #d612516b;
+    color:#f50057;
   }
   .nav-text .active{
     border-radius: 5px; 
-    background-color: #d612516b;
+    border: 1px solid #d612516b;
     transition: 0.5s;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color:#f50057;
   }
   ul{
     margin-top: 15px !important;
@@ -84,39 +136,29 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  
+    position: relative ;
+
   }
-  .header .rightbar div{
-   margin: 0 10px;
-   padding: 5px 8px;
+
+
+  .header .rightbar Button{
+   margin: 0 1px;
+   padding: 5px 5px;
    border-radius: 5px;
    cursor: pointer;
    font-size: 16px;
   }
   
-  .sign-in{
-    background-color: #f30808c0;
-    color: white;
-    box-shadow: rgba(247, 94, 94, 0.945) 0px 1px 4px;
-  }
-  .sign-in:hover{
-    box-shadow: rgba(160, 53, 49, 0.808) 0px 6px 12px -2px, rgba(238, 99, 99, 0.712) 0px 3px 7px -3px;
-  }
-  .sign-up{
-    background-color: #0bc251e3;
-    color: white;
-    box-shadow: rgba(25, 223, 131, 0.945) 0px 1px 4px;
-  }
-  .sign-up:hover{
-    box-shadow: rgba(44, 196, 112, 0.808) 0px 6px 12px -2px, rgba(23, 197, 139, 0.788) 0px 3px 7px -3px;
-  }
   .navbar-toggle{
     display: none !important;
   }
+
+
   @media only screen and (max-width: 930px) {  
     .logo{
       display: none;
     }
+
     .menu-bars{
       display: block;
     }
@@ -139,6 +181,7 @@
       left: 0;
       transition: 350ms;
     }
+
     .nav-text {
       display: flex;
       justify-content: flex-start;
@@ -162,7 +205,8 @@
     }
     
     .nav-text a:hover {
-      background-color: #d612516b;
+      border: 1px solid #d612516b;
+     
     }
     
     .nav-menu-items {
@@ -172,6 +216,8 @@
       display: flex;
       margin: 0 !important;
       flex-direction: column;
+      position: relative;
+      z-index: 3;
     }
   
     .navbar-toggle {
@@ -190,7 +236,7 @@
      color: #000000 !important;
     
     }
-    span {
+    .nav-text span {
       margin-left: 16px;
     }
     .navbar{
